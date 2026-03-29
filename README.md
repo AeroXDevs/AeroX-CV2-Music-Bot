@@ -138,10 +138,6 @@ A powerful Discord music bot with LavaLink integration, featuring support for Yo
    LAVALINK_PASSWORDS=youshallnotpass
    LAVALINK_SECURES=false
    
-   # Optional: Spotify Integration
-   SPOTIFY_CLIENT_ID=your_spotify_client_id
-   SPOTIFY_CLIENT_SECRET=your_spotify_client_secret
-   
    # Optional: Genius Lyrics
    GENIUS_API_KEY=your_genius_api_key
    ```
@@ -233,9 +229,6 @@ AeroX-Music/
 - Check LavaLink credentials in `.env`
 - Ensure the bot has `Connect` and `Speak` permissions in voice channels
 
-### Spotify links don't work
-- Add your Spotify Client ID and Secret to `.env`
-- Get credentials from [Spotify Developer Dashboard](https://developer.spotify.com/dashboard)
 
 ---
 

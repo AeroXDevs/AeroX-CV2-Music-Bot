@@ -22,11 +22,6 @@ module.exports = {
     },
     
     
-    SPOTIFY: {
-        CLIENT_ID: process.env.SPOTIFY_CLIENT_ID || '',
-        CLIENT_SECRET: process.env.SPOTIFY_CLIENT_SECRET || ''
-    },
-    
     
     GENIUS: {
         API_KEY: process.env.GENIUS_API_KEY || ''

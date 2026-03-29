@@ -35,16 +35,7 @@ module.exports = {
 
         const query = args.join(' ');
 
-        if (query.toLowerCase().includes('spotify') && (!config.SPOTIFY.CLIENT_ID || !config.SPOTIFY.CLIENT_SECRET)) {
-            const container = new ContainerBuilder()
-                .addTextDisplayComponents(
-                    new TextDisplayBuilder().setContent(`${emojis.error} Spotify is not configured by the bot owner.`)
-                );
-            return message.reply({ 
-                components: [container], 
-                flags: MessageFlags.IsPersistent | MessageFlags.IsComponentsV2
-            });
-        }
+        
 
         const searchContainer = new ContainerBuilder()
             .addTextDisplayComponents(
