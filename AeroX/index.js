@@ -69,10 +69,6 @@ global.aerox = {
     },
     addons: {
         music: {
-            spotify: {
-                clientID: config.SPOTIFY.CLIENT_ID,
-                clientSecret: config.SPOTIFY.CLIENT_SECRET
-            },
             playlistLimit: config.MUSIC.PLAYLIST_LIMIT || 3,
             useAI: false
         },
