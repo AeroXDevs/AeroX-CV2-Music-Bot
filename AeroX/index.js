@@ -1,6 +1,5 @@
 const { Client, GatewayIntentBits, Collection, REST, Routes } = require('discord.js');
 const { Poru } = require('poru');
-const { Spotify } = require('poru-spotify');
 const fs = require('fs');
 const path = require('path');
 const { setupMusicEvents } = require('./music/events');
