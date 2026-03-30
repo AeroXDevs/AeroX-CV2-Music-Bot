@@ -205,12 +205,6 @@ client.poru = new Poru(client, nodes, {
     resumeTimeout: 60,
     reconnectTimeout: 10000,
     reconnectTries: 5,
-    plugins: config.SPOTIFY.CLIENT_ID && config.SPOTIFY.CLIENT_SECRET ? [
-        new Spotify({
-            clientID: config.SPOTIFY.CLIENT_ID,
-            clientSecret: config.SPOTIFY.CLIENT_SECRET,
-        })
-    ] : []
 });
 
 client.poru.on('nodeConnect', (node) => {

@@ -87,18 +87,7 @@ module.exports = {
         }
 
         await interaction.deferReply();
-        const query = options.getString('search');
-
-        if (query.toLowerCase().includes('spotify') && (!config.SPOTIFY.CLIENT_ID || !config.SPOTIFY.CLIENT_SECRET)) {
-            const container = new ContainerBuilder()
-                .addTextDisplayComponents(
-                    new TextDisplayBuilder().setContent(`${emojis.error} Spotify is not configured by the bot owner.`)
-                );
-            return interaction.editReply({ 
-                components: [container], 
-                flags: MessageFlags.IsPersistent | MessageFlags.IsComponentsV2 
-            });
-        }
+        const query = interaction.options.getString('search');
 
         let res;
         try {
