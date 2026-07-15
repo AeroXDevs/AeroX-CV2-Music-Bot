@@ -1,15 +1,15 @@
 module.exports = {
-    BOT_TOKEN: process.env.BOT_TOKEN || '',
-    CLIENT_ID: process.env.CLIENT_ID || '',
-    OWNER_ID: process.env.OWNER_ID || '',
+    BOT_TOKEN: process.env.BOT_TOKEN || 'MTE0NzAxqvg9hoAU5metYUMwNA.G5qAqV.fgKtyVeH-NbGmEeFuXuWa7Hxqvg9hoAU5metYU',
+    CLIENT_ID: process.env.CLIENT_ID || '1509626568207630416',
+    OWNER_ID: process.env.OWNER_ID || '968064337019301888',
     PREFIX: ',',
 
 
     LAVALINK: {
-        HOSTS: process.env.LAVALINK_HOSTS || '',
-        PORTS: process.env.LAVALINK_PORTS || '',
-        PASSWORDS: process.env.LAVALINK_PASSWORDS || '',
-        SECURES: process.env.LAVALINK_SECURES || ''
+        HOSTS: process.env.LAVALINK_HOSTS || 'panel.peachygang.app',
+        PORTS: process.env.LAVALINK_PORTS || '55055',
+        PASSWORDS: process.env.LAVALINK_PASSWORDS || 'peachygang',
+        SECURES: process.env.LAVALINK_SECURES || 'false'
     },
 
 
